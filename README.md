@@ -32,26 +32,6 @@ To get started, follow these steps:
    pip install -r requirements.txt
    ```
 
-## Easy one-command runner
-Use this script to run everything without juggling multiple files:
-
-```bash
-python run_platepatrol.py --mode full --video path/to/video.mp4
-```
-
-Other modes:
-
-```bash
-python run_platepatrol.py --mode detect --video path/to/video.mp4
-python run_platepatrol.py --mode interpolate
-python run_platepatrol.py --mode visualize --video path/to/video.mp4
-```
-
-The default outputs are:
-- `test.csv`
-- `test_interpolated.csv`
-- `out.mp4`
-
 ## CLI workflow
 1. **Run detection:**
    ```bash
@@ -96,3 +76,7 @@ Instead, upload the built executable via:
 
 - a **GitHub Release** asset (recommended), or
 - a **CI workflow artifact**.
+pyinstaller --noconfirm --onefile --windowed gui_app.py
+```
+
+The executable will be created in `dist/gui_app.exe`.

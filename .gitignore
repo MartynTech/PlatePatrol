@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Packaging artifacts
+build/
+dist/
+*.spec
+
+# Windows binaries should be shipped via Releases/artifacts, not committed
+*.exe

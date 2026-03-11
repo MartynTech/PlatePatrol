@@ -65,6 +65,17 @@ Use PyInstaller on a Windows machine:
 
 ```bash
 pip install pyinstaller
+pyinstaller --noconfirm --onefile --windowed --name PlatePatrolGUI gui_app.py
+```
+
+The executable will be created in `dist/PlatePatrolGUI.exe`.
+
+## If your PR rejects binaries
+If your git provider shows an error like **"Binary files are not supported"**, do not commit the `.exe` into the PR.
+Instead, upload the built executable via:
+
+- a **GitHub Release** asset (recommended), or
+- a **CI workflow artifact**.
 pyinstaller --noconfirm --onefile --windowed gui_app.py
 ```
 
